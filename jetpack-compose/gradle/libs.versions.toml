@@ -1,0 +1,20 @@
+[versions]
+agp = "9.0.1"
+androidXActivity = "1.12.4"
+compose = "2026.02.00"
+coil = "3.3.0"
+kotlin = "2.3.10"
+ktor = "3.4.0"
+
+[libraries]
+androidX-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidXActivity" }
+androidX-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+androidX-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidX-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+coilKt-coil3-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coilKt-coil3-networkKtor3 = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
+ktor-clientAndroid = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetBrains-kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
